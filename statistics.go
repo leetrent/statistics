@@ -20,7 +20,7 @@ func CalcStandardDeviation( data[] float64) float64 {
 }
 
 func CalcVarianceUsingMean(mean float64, data []float64) float64 {
-	sqDevFromMean := make([]float64, len(data)) // squared deviation from mean
+	var sqDevFromMean []float64 // squared deviation from mean
 
 	for _, val := range(data) {
 		valMinusMean := val - mean
