@@ -7,6 +7,10 @@ import (
 	"sort"
 )
 
+func CalcN(data []float64) int {
+	return len(data)
+}
+
 func CalcMean(data []float64) float64 {
 	var sum float64
 	for _, val := range data {
@@ -104,6 +108,7 @@ func test2() {
 func main() {
 	//http://www.statcan.gc.ca/edu/power-pouvoir/ch11/median-mediane/5214872-eng.htm
 	//https://play.golang.org/p/OWbFm_XBoE
+	// https://play.golang.org/p/mXwumkpI3H
 	test1()
 	fmt.Println("")
 	test2()
